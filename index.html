@@ -189,8 +189,7 @@
 
     /* HERO */
     #hero {
-      height: 100vh;
-      min-height: 680px;
+      min-height: 100vh;
       position: relative;
       display: flex;
       align-items: center;
@@ -589,7 +588,8 @@
     .pstack {
       position: relative;
       width: 100%;
-      aspect-ratio: 4/5
+      aspect-ratio: 4/5;
+      margin-bottom: 60px;
     }
 
     .ps-back {
@@ -2115,6 +2115,19 @@
         grid-template-columns: 1fr
       }
 
+      .hstats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 32px;
+        padding-top: 32px;
+      }
+
+      .scrollcue {
+        left: 24px;
+        bottom: 24px;
+      }
+
       .hbtns,
       .vctas {
         flex-direction: column;
@@ -2280,9 +2293,7 @@
                 alt="Mix Culture Pizzeria" loading="lazy">
             </div>
             <div class="ps-front">
-              <img
-                src="https://lh3.googleusercontent.com/EWHitCxFHQ3-TkB8WAOPOzfdOTz7T67CUgjy28T2l77Iq_-3Ie8VIvwrPHT1fax_Q-wq-LGhhL4PFZm6RwtQTIKMfzY7603tJDar_-Y=w800-rw"
-                alt="Mix Culture Pizzeria interior" loading="lazy">
+              <img src="food.jpg" alt="Mix Culture Pizzeria food spread" loading="lazy">
             </div>
             <div class="ps-badge">
               <div class="ps-bn">4.4</div>
@@ -2295,6 +2306,7 @@
           <p class="lbl">Our Story</p>
           <h2 class="hdg">Where Cultures<br>Meet on a <em>Pizza.</em></h2>
           <div class="rule"></div>
+          <img src="food.jpg" alt="Mix Culture Pizza Spread" style="width:100%; border-radius:12px; margin-bottom:24px; box-shadow:0 8px 32px rgba(0,0,0,0.4);" loading="lazy">
           <p class="subp">Born in 2021 from a deep love for pizza-making and bold flavors — Mix Culture Pizzeria is Vile
             Parle East's most beloved hidden gem. We blend Italian craft with Indian soul.</p>
           <br>
@@ -2310,13 +2322,14 @@
             <span class="pill">Est. 2021</span>
             <span class="pill">WiFi Available</span>
           </div>
-          <a href="#dishes" class="btng" style="margin-top:32px;display:inline-block">See Our Pizzas →</a>
+
+          <div style="margin-top:32px; display: flex; flex-wrap: wrap; gap: 15px;">
+            <a href="#dishes" class="btng">See Our Pizzas →</a>
+            <a href="new_menu.pdf" target="_blank" class="btnr" style="background: var(--gold); color: var(--char);">📖
+              Physical Menu (PDF)</a>
+          </div>
         </div>
 
-      </div>
-      <div style="text-align:center;margin-top:40px;">
-        <button onclick="showReviewPopup()" class="btnr" style="border:none;cursor:pointer;font-family:inherit;">✏️
-          Write a Review</button>
       </div>
     </div>
   </section>
@@ -2361,8 +2374,8 @@
           </div>
         </div>
         <div class="dc rv d1" data-tilt>
-          <div class="dc-img"><img src="optimized-images/queen-margherita-new-york-pizza.webp"
-              alt="NY Style Pizza" loading="lazy">
+          <div class="dc-img"><img src="optimized-images/queen-margherita-new-york-pizza.webp" alt="NY Style Pizza"
+              loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2387,8 +2400,8 @@
           </div>
         </div>
         <div class="dc rv d2" data-tilt>
-          <div class="dc-img"><img src="optimized-images/spicy-mushroom-neapolitan-pizza.webp"
-              alt="Mix Culture Pizza" loading="lazy">
+          <div class="dc-img"><img src="optimized-images/spicy-mushroom-neapolitan-pizza.webp" alt="Mix Culture Pizza"
+              loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2433,20 +2446,18 @@
               <div class="mpco-n">Bombay Sicilian</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/classic-margherita.webp" alt="Classic Margherita"
-              loading="lazy">
+          <div class="mpc"><img src="optimized-images/classic-margherita.webp" alt="Classic Margherita" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Classic Margherita</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/detroit-al-funghi.webp" alt="Detroit Al Funghi"
-              loading="lazy">
+          <div class="mpc"><img src="optimized-images/detroit-al-funghi.webp" alt="Detroit Al Funghi" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Detroit Al Funghi</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/detroit-margherita-pizza.webp"
-              alt="Detroit Margherita Pizza" loading="lazy">
+          <div class="mpc"><img src="optimized-images/detroit-margherita-pizza.webp" alt="Detroit Margherita Pizza"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Detroit Margherita</div>
             </div>
@@ -2475,8 +2486,8 @@
               <div class="mpco-n">Margherita Greek [10 ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/margherita-st-louis-pizza.webp"
-              alt="Margherita St Louis Pizza" loading="lazy">
+          <div class="mpc"><img src="optimized-images/margherita-st-louis-pizza.webp" alt="Margherita St Louis Pizza"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Margherita St Louis</div>
             </div>
@@ -2547,8 +2558,8 @@
               <div class="mpco-n">Sriracha Paneer Greek ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/sun-pizza-new-york-pizza.webp"
-              alt="Sun Pizza New York Pizza" loading="lazy">
+          <div class="mpc"><img src="optimized-images/sun-pizza-new-york-pizza.webp" alt="Sun Pizza New York Pizza"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Sun New York</div>
             </div>
@@ -2605,8 +2616,7 @@
               <div class="mpco-n">The Loaded Legend St L...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/the-loaded-legend.webp" alt="The Loaded Legend"
-              loading="lazy">
+          <div class="mpc"><img src="optimized-images/the-loaded-legend.webp" alt="The Loaded Legend" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">The Loaded Legend</div>
             </div>
@@ -2673,8 +2683,7 @@
       <!-- SIDES -->
       <div id="ms" class="mpanel">
         <div class="mpgrid">
-          <div class="mpc"><img src="optimized-images/baked-cheese-fries.webp" alt="Baked Cheese Fries"
-              loading="lazy">
+          <div class="mpc"><img src="optimized-images/baked-cheese-fries.webp" alt="Baked Cheese Fries" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Baked Cheese Fries</div>
             </div>
@@ -2685,8 +2694,8 @@
               <div class="mpco-n">Baked Cheese Peri Peri...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/creamy-tomato-basil-soup.webp"
-              alt="Creamy Tomato Basil Soup" loading="lazy">
+          <div class="mpc"><img src="optimized-images/creamy-tomato-basil-soup.webp" alt="Creamy Tomato Basil Soup"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Creamy Tomato Basil Soup</div>
             </div>
@@ -2719,8 +2728,8 @@
               <div class="mpco-n">Lemon Fries</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/masala-garlic-bread-bun.webp"
-              alt="Masala Garlic Bread (Bun)" loading="lazy">
+          <div class="mpc"><img src="optimized-images/masala-garlic-bread-bun.webp" alt="Masala Garlic Bread (Bun)"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Masala Garlic Bread (Bun)</div>
             </div>
@@ -2730,8 +2739,7 @@
               <div class="mpco-n">Peri Peri Fries</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/pesto-garlic-bread.webp" alt="Pesto Garlic Bread"
-              loading="lazy">
+          <div class="mpc"><img src="optimized-images/pesto-garlic-bread.webp" alt="Pesto Garlic Bread" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Pesto Garlic Bread</div>
             </div>
@@ -2803,8 +2811,8 @@
               <div class="mpco-n">Bechamel Pasta [White ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/marinara-pasta-red-sauce.webp"
-              alt="Marinara Pasta [Red Sauce]" loading="lazy">
+          <div class="mpc"><img src="optimized-images/marinara-pasta-red-sauce.webp" alt="Marinara Pasta [Red Sauce]"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Marinara Pasta [Red Sa...</div>
             </div>
@@ -2842,8 +2850,7 @@
               <div class="mpco-n">Chilly Guava</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/chocolate-brownie.webp" alt="Chocolate Brownie"
-              loading="lazy">
+          <div class="mpc"><img src="optimized-images/chocolate-brownie.webp" alt="Chocolate Brownie" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Chocolate Brownie</div>
             </div>
@@ -2853,8 +2860,8 @@
               <div class="mpco-n">Classic Mojito</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/double-chocolate-lava-cake.webp"
-              alt="Double Chocolate Lava Cake" loading="lazy">
+          <div class="mpc"><img src="optimized-images/double-chocolate-lava-cake.webp" alt="Double Chocolate Lava Cake"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Double Chocolate Lava ...</div>
             </div>
@@ -2888,9 +2895,17 @@
         </div>
       </div>
 
-      <div style="text-align:center;margin-top:52px">
-        <a href="https://www.zomato.com/mumbai/mix-culture-pizzeria-vile-parle-east/order" target="_blank"
-          class="btnr">📲 Order Full Menu on Zomato</a>
+      <div
+        style="text-align:center; margin-top:52px; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+
+        <a href="new_menu.pdf" target="_blank" class="btnr" style="background: var(--gold); color: var(--char);">
+          📖 View Physical Menu
+        </a>
+
+        <a href="https://www.zomato.com/mumbai/mix-culture-pizzeria-vile-parle-east/order" target="_blank" class="btnr">
+          📲 Order Full Menu on Zomato
+        </a>
+
       </div>
     </div>
   </section>
