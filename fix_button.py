@@ -19,7 +19,7 @@ new_badges = """    <div class="pbadges rv d1">
       <button onclick="showReviewPopup()" class="btnr" style="border:none;cursor:pointer;font-family:inherit;">✏️ Write a Review</button>
     </div>"""
 
-if "showReviewPopup()" not in content.split('id="reviews"')[1][:2000]:
+if "showReviewPopup()" not in content.split('id="reviews"')[1]:
     content = content.replace(old_badges, new_badges)
 
 with open(html_file, "w", encoding="utf-8") as f:

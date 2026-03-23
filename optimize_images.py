@@ -1,6 +1,6 @@
 import os
 import re
-from PIL import Image
+from PIL import Image  # type: ignore
 
 def clean_filename(filename):
     """

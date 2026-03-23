@@ -28,7 +28,7 @@ for filename in os.listdir(directory):
         sides.append({'name': name, 'path': path})
 
 def gen_html(items, category_id):
-    html = []
+    html: list = []
     for item in items:
         # We will use the photo name as the display name, and some generic text for price/badges if needed.
         # But for large lists, just name and simple price.

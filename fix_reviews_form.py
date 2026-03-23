@@ -5,7 +5,7 @@ with open(html_file, "r", encoding="utf-8") as f:
     content = f.read()
 
 # 1. Insert "Write a Review" button if missing
-if "Write a Review" not in content[:80000]: # Check in body loosely (or generally across file)
+if "Write a Review" not in content: # Check in body loosely (or generally across file)
     button_html = """    <div class="pbadges rv d1">
       <a href="https://www.zomato.com/mumbai/mix-culture-pizzeria-vile-parle-east" target="_blank" class="pbadge"><div class="pb-logo">🍅</div><div><span class="pb-name">Zomato</span><span class="pb-rating">4.4 ★</span></div></a>
       <a href="https://www.swiggy.com/restaurants/mix-culture-pizzeria-vile-parle-east-mumbai-1152906/dineout" target="_blank" class="pbadge"><div class="pb-logo">🛵</div><div><span class="pb-name">Swiggy Dineout</span><span class="pb-rating">4.6 ★ · 164 reviews</span></div></a>

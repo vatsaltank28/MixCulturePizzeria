@@ -4,9 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mix Culture Pizzeria – Best Pizza in Vile Parle East, Mumbai</title>
+  <title>Mix Culture Pizzeria | Chicago Deep Dish in Vile Parle</title>
   <meta name="description"
-    content="Mumbai's hidden gem for Chicago Deep Dish, NY Style & fusion pizzas. Vile Parle East. Order on Zomato & Swiggy. Call +91 88507 17019 / 976910078.">
+    content="Mix Culture Pizzeria serves authentic Chicago-style deep dish pizzas in Vile Parle, Mumbai. Reserve your table or order now.">
+  <meta name="keywords"
+    content="pizza Mumbai, deep dish pizza, Mix Culture Pizzeria, Vile Parle restaurant, Chicago pizza India">
+  <meta property="og:title" content="Mix Culture Pizzeria">
+  <meta property="og:description" content="Where cultures meet on a pizza. Experience authentic deep dish pizzas.">
+  <meta property="og:image" content="optimized-images/ambience-1.webp">
+  <meta property="og:type" content="website">
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet">
@@ -2193,6 +2199,85 @@
         grid-template-columns: repeat(2, 1fr)
       }
     }
+
+
+
+    /* Sticky CTAs */
+    .sticky-ctas {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    .sticky-ctas button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 50px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s var(--ease);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .cta-call {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .cta-res {
+      background: var(--gold);
+      color: var(--char);
+    }
+
+    .cta-wa {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .sticky-ctas button:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Micro Animations & Hover Effects */
+    .testi-card {
+      transition: all 0.3s var(--ease);
+    }
+
+    .testi-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(212, 168, 50, 0.4);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .rating-badge:hover {
+      transform: scale(1.03);
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(192, 41, 28, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(192, 41, 28, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(192, 41, 28, 0);
+      }
+    }
   </style>
 </head>
 
@@ -2328,7 +2413,7 @@
                 alt="Mix Culture Pizzeria" loading="lazy">
             </div>
             <div class="ps-front">
-              <img src="food.jpg" alt="Mix Culture Pizzeria food spread" loading="lazy">
+              <img width="2048" height="1412" src="food.jpg" alt="Mix Culture Pizzeria food spread" loading="lazy">
             </div>
             <div class="ps-badge">
               <div class="ps-bn">4.4</div>
@@ -2387,7 +2472,8 @@
       </div>
       <div class="dgrid">
         <div class="dc rv" data-tilt>
-          <div class="dc-img"><img src="food.jpg" alt="Chicago Deep Dish Pizza" loading="lazy">
+          <div class="dc-img"><img width="2048" height="1412" src="food.jpg" alt="Chicago Deep Dish Pizza"
+              loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2400,7 +2486,7 @@
           </div>
         </div>
         <div class="dc rv d1" data-tilt>
-          <div class="dc-img"><img src="optimized-images/double-chocolate-lava-cake.webp"
+          <div class="dc-img"><img width="1200" height="800" src="optimized-images/double-chocolate-lava-cake.webp"
               alt="Double Chocolate Lava Cake" loading="lazy">
             <div class="dc-shine"></div>
           </div>
@@ -2414,8 +2500,8 @@
           </div>
         </div>
         <div class="dc rv d1" data-tilt>
-          <div class="dc-img"><img src="optimized-images/queen-margherita-new-york-pizza.webp" alt="NY Style Pizza"
-              loading="lazy">
+          <div class="dc-img"><img width="1200" height="800" src="optimized-images/queen-margherita-new-york-pizza.webp"
+              alt="NY Style Pizza" loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2427,8 +2513,9 @@
           </div>
         </div>
         <div class="dc rv d2" data-tilt>
-          <div class="dc-img"><img src="optimized-images/pesto-truffle-temptation-greek-pizza-10-inches.webp"
-              alt="Pestorita Pizza" loading="lazy">
+          <div class="dc-img"><img width="1200" height="800"
+              src="optimized-images/pesto-truffle-temptation-greek-pizza-10-inches.webp" alt="Pestorita Pizza"
+              loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2440,8 +2527,8 @@
           </div>
         </div>
         <div class="dc rv d2" data-tilt>
-          <div class="dc-img"><img src="optimized-images/spicy-mushroom-neapolitan-pizza.webp" alt="Mix Culture Pizza"
-              loading="lazy">
+          <div class="dc-img"><img width="1200" height="800" src="optimized-images/spicy-mushroom-neapolitan-pizza.webp"
+              alt="Mix Culture Pizza" loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2475,199 +2562,211 @@
       <!-- PIZZAS -->
       <div id="mp" class="mpanel on">
         <div class="mpgrid">
-          <div class="mpc"><img src="optimized-images/al-funghi-pizza.webp" alt="Al Funghi Pizza" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/al-funghi-pizza.webp"
+              alt="Al Funghi Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Al Funghi</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/bombay-pizza-sicilian-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/bombay-pizza-sicilian-pizza.webp"
               alt="Bombay Pizza Sicilian Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Bombay Sicilian</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/classic-margherita.webp" alt="Classic Margherita" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/classic-margherita.webp"
+              alt="Classic Margherita" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Classic Margherita</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/detroit-al-funghi.webp" alt="Detroit Al Funghi" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/detroit-al-funghi.webp"
+              alt="Detroit Al Funghi" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Detroit Al Funghi</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/detroit-margherita-pizza.webp" alt="Detroit Margherita Pizza"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/detroit-margherita-pizza.webp"
+              alt="Detroit Margherita Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Detroit Margherita</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/fresh-mozzarella-neapolitan-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/fresh-mozzarella-neapolitan-pizza.webp"
               alt="Fresh Mozzarella Neapolitan Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Fresh Mozzarella Neapo...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/greco-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/greco-greek-pizza-10-inches.webp"
               alt="Greco Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Greco Greek [10 Inches]</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/loaded-tortilla-pizza-st-louis-pizza.webp"
+          <div class="mpc"><img width="1200" height="800"
+              src="optimized-images/loaded-tortilla-pizza-st-louis-pizza.webp"
               alt="Loaded Tortilla Pizza St Louis Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Loaded Tortilla St Louis</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/margherita-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/margherita-greek-pizza-10-inches.webp"
               alt="Margherita Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Margherita Greek [10 ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/margherita-st-louis-pizza.webp" alt="Margherita St Louis Pizza"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/margherita-st-louis-pizza.webp"
+              alt="Margherita St Louis Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Margherita St Louis</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/peppy-paneer-new-york-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/peppy-paneer-new-york-pizza.webp"
               alt="Peppy Paneer New York Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Peppy Paneer New York</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/peppy-paneer-st-louis-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/peppy-paneer-st-louis-pizza.webp"
               alt="Peppy Paneer St Louis Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Peppy Paneer St Louis</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/pesto-truffle-temptation-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800"
+              src="optimized-images/pesto-truffle-temptation-greek-pizza-10-inches.webp"
               alt="Pesto Truffle Temptation Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Pesto Truffle Temptati...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/picanto-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/picanto-greek-pizza-10-inches.webp"
               alt="Picanto Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Picanto Greek [10 Inc...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/queen-margherita-new-york-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/queen-margherita-new-york-pizza.webp"
               alt="Queen Margherita New York Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Queen Margherita New York</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/spicy-barbeque-paneer-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800"
+              src="optimized-images/spicy-barbeque-paneer-greek-pizza-10-inches.webp"
               alt="Spicy Barbeque Paneer Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Spicy Barbeque Paneer ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/spicy-barbeque-st-louis-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/spicy-barbeque-st-louis-pizza.webp"
               alt="Spicy Barbeque St Louis Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Spicy Barbeque St Louis</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/spicy-margherita-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800"
+              src="optimized-images/spicy-margherita-greek-pizza-10-inches.webp"
               alt="Spicy Margherita Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Spicy Margherita Greek...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/spicy-margherita-sicilian-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/spicy-margherita-sicilian-pizza.webp"
               alt="Spicy Margherita Sicilian Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Spicy Margherita Sicilian</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/spicy-mushroom-neapolitan-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/spicy-mushroom-neapolitan-pizza.webp"
               alt="Spicy Mushroom Neapolitan Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Spicy Mushroom Neapolitan</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/sriracha-paneer-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800"
+              src="optimized-images/sriracha-paneer-greek-pizza-10-inches.webp"
               alt="Sriracha Paneer Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Sriracha Paneer Greek ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/sun-pizza-new-york-pizza.webp" alt="Sun Pizza New York Pizza"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/sun-pizza-new-york-pizza.webp"
+              alt="Sun Pizza New York Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Sun New York</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/sun-pizza.webp" alt="Sun Pizza" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/sun-pizza.webp" alt="Sun Pizza"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Sun</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/tandoori-paneer-kulhad-small.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/tandoori-paneer-kulhad-small.webp"
               alt="Tandoori Paneer Kulhad Small" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Tandoori Paneer Kulhad...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/tandoori-paneer-new-york-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/tandoori-paneer-new-york-pizza.webp"
               alt="Tandoori Paneer New York Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Tandoori Paneer New York</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/tandoori-paneer-sicilian-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/tandoori-paneer-sicilian-pizza.webp"
               alt="Tandoori Paneer Sicilian Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Tandoori Paneer Sicilian</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/tandoori-paneer-st-louis-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/tandoori-paneer-st-louis-pizza.webp"
               alt="Tandoori Paneer St Louis Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Tandoori Paneer St Louis</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/tandoori-paneer.webp" alt="Tandoori Paneer" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/tandoori-paneer.webp"
+              alt="Tandoori Paneer" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Tandoori Paneer</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/the-loaded-legend-greek-pizza-10-inches.webp"
+          <div class="mpc"><img width="1200" height="800"
+              src="optimized-images/the-loaded-legend-greek-pizza-10-inches.webp"
               alt="The Loaded Legend Greek Pizza [10 Inches]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">The Loaded Legend Gree...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/the-loaded-legend-new-york-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/the-loaded-legend-new-york-pizza.webp"
               alt="The Loaded Legend New York Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">The Loaded Legend New ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/the-loaded-legend-st-louis-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/the-loaded-legend-st-louis-pizza.webp"
               alt="The Loaded Legend St Louis Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">The Loaded Legend St L...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/the-loaded-legend.webp" alt="The Loaded Legend" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/the-loaded-legend.webp"
+              alt="The Loaded Legend" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">The Loaded Legend</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/ultimate-sicilian-pizza.webp" alt="Ultimate Sicilian Pizza"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/ultimate-sicilian-pizza.webp"
+              alt="Ultimate Sicilian Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Ultimate Sicilian</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/veggie-exotic-new-york-pizza.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/veggie-exotic-new-york-pizza.webp"
               alt="Veggie Exotic New York Pizza" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Veggie Exotic New York</div>
@@ -2723,73 +2822,79 @@
       <!-- SIDES -->
       <div id="ms" class="mpanel">
         <div class="mpgrid">
-          <div class="mpc"><img src="garlic_knots.jpg" alt="Garlic Knots" loading="lazy">
+          <div class="mpc"><img width="2048" height="1365" src="garlic_knots.jpg" alt="Garlic Knots" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Garlic Knots</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/baked-cheese-fries.webp" alt="Baked Cheese Fries" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/baked-cheese-fries.webp"
+              alt="Baked Cheese Fries" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Baked Cheese Fries</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/baked-cheese-peri-peri-fries.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/baked-cheese-peri-peri-fries.webp"
               alt="Baked Cheese Peri Peri Fries" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Baked Cheese Peri Peri...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/creamy-tomato-basil-soup.webp" alt="Creamy Tomato Basil Soup"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/creamy-tomato-basil-soup.webp"
+              alt="Creamy Tomato Basil Soup" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Creamy Tomato Basil Soup</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/fully-loaded-garlic-bread-bun.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/fully-loaded-garlic-bread-bun.webp"
               alt="Fully Loaded Garlic Bread (Bun)" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Fully Loaded Garlic Br...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/garlic-bread-with-cheese-bun.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/garlic-bread-with-cheese-bun.webp"
               alt="Garlic Bread With Cheese (Bun)" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Garlic Bread With Chee...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/garlic-bread.webp" alt="Garlic Bread" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/garlic-bread.webp" alt="Garlic Bread"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Garlic Bread</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/jalapeno-cheese-poppers-6pcs.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/jalapeno-cheese-poppers-6pcs.webp"
               alt="Jalapeno Cheese Poppers (6Pcs)" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Jalapeno Cheese Popper...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/lemon-fries.webp" alt="Lemon Fries" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/lemon-fries.webp" alt="Lemon Fries"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Lemon Fries</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/masala-garlic-bread-bun.webp" alt="Masala Garlic Bread (Bun)"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/masala-garlic-bread-bun.webp"
+              alt="Masala Garlic Bread (Bun)" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Masala Garlic Bread (Bun)</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/peri-peri-fries.webp" alt="Peri Peri Fries" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/peri-peri-fries.webp"
+              alt="Peri Peri Fries" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Peri Peri Fries</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/pesto-garlic-bread.webp" alt="Pesto Garlic Bread" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/pesto-garlic-bread.webp"
+              alt="Pesto Garlic Bread" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Pesto Garlic Bread</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/salted-fries.webp" alt="Salted Fries" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/salted-fries.webp" alt="Salted Fries"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Salted Fries</div>
             </div>
@@ -2851,25 +2956,25 @@
       <!-- PASTA -->
       <div id="mpa" class="mpanel">
         <div class="mpgrid">
-          <div class="mpc"><img src="optimized-images/al-pesto-pasta-basil-sauce.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/al-pesto-pasta-basil-sauce.webp"
               alt="Al Pesto Pasta [Basil Sauce]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Al Pesto Pasta [Basil ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/bechamel-pasta-white-sauce.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/bechamel-pasta-white-sauce.webp"
               alt="Bechamel Pasta [White Sauce]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Bechamel Pasta [White ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/marinara-pasta-red-sauce.webp" alt="Marinara Pasta [Red Sauce]"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/marinara-pasta-red-sauce.webp"
+              alt="Marinara Pasta [Red Sauce]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Marinara Pasta [Red Sa...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/parma-rosa-pasta-pink-sauce.webp"
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/parma-rosa-pasta-pink-sauce.webp"
               alt="Parma Rosa Pasta [Pink Sauce]" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Parma Rosa Pasta [Pink...</div>
@@ -2897,28 +3002,32 @@
       <!-- DESSERTS -->
       <div id="md" class="mpanel">
         <div class="mpgrid" style="grid-template-columns:repeat(2,1fr)">
-          <div class="mpc"><img src="optimized-images/chilly-guava.webp" alt="Chilly Guava" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/chilly-guava.webp" alt="Chilly Guava"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Chilly Guava</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/chocolate-brownie.webp" alt="Chocolate Brownie" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/chocolate-brownie.webp"
+              alt="Chocolate Brownie" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Chocolate Brownie</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/classic-mojito.webp" alt="Classic Mojito" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/classic-mojito.webp"
+              alt="Classic Mojito" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Classic Mojito</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/double-chocolate-lava-cake.webp" alt="Double Chocolate Lava Cake"
-              loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/double-chocolate-lava-cake.webp"
+              alt="Double Chocolate Lava Cake" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Double Chocolate Lava ...</div>
             </div>
           </div>
-          <div class="mpc"><img src="optimized-images/spicy-mango.webp" alt="Spicy Mango" loading="lazy">
+          <div class="mpc"><img width="1200" height="800" src="optimized-images/spicy-mango.webp" alt="Spicy Mango"
+              loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Spicy Mango</div>
             </div>
@@ -3007,6 +3116,50 @@
           <div class="wtitle">Passionate Hospitality</div>
           <p class="wtext">"Owner is super courteous and hospitality is commendable." Owner-run, heart-driven — the
             people making your pizza care deeply about every bite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CUSTOMER TESTIMONIALS -->
+  <section class="testi-sec" style="padding: 80px 20px; background: var(--char2); text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--gold); margin-bottom: 5px;">
+        What Our Customers Say</h2>
+
+      <div
+        style="display:inline-block; background:rgba(255,255,255,0.05); padding:10px 20px; border-radius:50px; border:1px solid rgba(255,255,255,0.1); margin-top: 15px; margin-bottom:40px; cursor:pointer; transition: all 0.3s var(--ease);"
+        class="rating-badge"
+        onclick="window.open('https://search.google.com/local/writereview?placeid=ChIJgaCqW_bJ5zsRzsrExuXennc', '_blank')">
+        <span style="color:var(--gold); font-size:1.1rem; margin-right:5px;">⭐</span> <span
+          style="font-weight:bold; color:#fff;">4.5/5</span> <span style="color:var(--muted); font-size:0.9rem;">on
+          Google Reviews</span>
+      </div>
+
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <!-- Testi 1 -->
+        <div class="testi-card"
+          style="background: var(--char); padding: 30px; border-radius: 8px; border: 1px solid rgba(245,237,216,0.1); flex: 1; min-width: 250px; max-width: 350px; text-align: left;">
+          <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; font-style: italic;">"Hands down the best
+            Chicago Deep Dish in Mumbai! The crust is buttery, and the cheese pull is insane. Can't wait to visit
+            again."</p>
+          <div style="font-weight: bold; color: var(--gold2);">- Rohan M.</div>
+        </div>
+        <div class="testi-card"
+          style="background: var(--char); padding: 30px; border-radius: 8px; border: 1px solid rgba(245,237,216,0.1); flex: 1; min-width: 250px; max-width: 350px; text-align: left;">
+          <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; font-style: italic;">"The fusion pizzas
+            are a revelation. Tandoori Paneer on a New York slice? Yes please! Amazing ambiance too."</p>
+          <div style="font-weight: bold; color: var(--gold2);">- Sneha K.</div>
+        </div>
+        <div class="testi-card"
+          style="background: var(--char); padding: 30px; border-radius: 8px; border: 1px solid rgba(245,237,216,0.1); flex: 1; min-width: 250px; max-width: 350px; text-align: left;">
+          <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; font-style: italic;">"We booked a table
+            and got 10% off. The staff was incredibly welcoming and the garlic knots were perfectly baked."</p>
+          <div style="font-weight: bold; color: var(--gold2);">- Rahul P.</div>
         </div>
       </div>
     </div>
@@ -3118,8 +3271,7 @@
           <div class="pb-logo">🍅</div>
           <div><span class="pb-name">Zomato</span><span class="pb-rating">4.4 ★</span></div>
         </a>
-        <a href="https://www.swiggy.com/city/mumbai/mix-culture-pizzeria-vile-parle-east-rest451813?source=sharing"
-          target="_blank" class="pbadge">
+        <a href="https://www.swiggy.com/menu/451813?source=sharing" target="_blank" class="pbadge">
           <div class="pb-logo">🛵</div>
           <div><span class="pb-name">Swiggy Dineout</span><span class="pb-rating">4.6 ★ · 164 reviews</span></div>
         </a>
@@ -3147,22 +3299,28 @@
     </div>
     <div class="ggrid" style="max-width:1400px;margin:0 auto">
 
-      <div class="gitem"><img src="optimized-images/ambience-1.webp" alt="Ambience 1" loading="lazy">
+      <div class="gitem"><img width="771" height="416" src="optimized-images/ambience-1.webp" alt="Ambience 1"
+          loading="lazy">
         <div class="gov"><span class="gcap">Cozy Seating</span></div>
       </div>
-      <div class="gitem"><img src="optimized-images/ambience-2.webp" alt="Ambience 2" loading="lazy">
+      <div class="gitem"><img width="300" height="273" src="optimized-images/ambience-2.webp" alt="Ambience 2"
+          loading="lazy">
         <div class="gov"><span class="gcap">Green Wall</span></div>
       </div>
-      <div class="gitem"><img src="optimized-images/ambience-3.webp" alt="Ambience 3" loading="lazy">
+      <div class="gitem"><img width="200" height="200" src="optimized-images/ambience-3.webp" alt="Ambience 3"
+          loading="lazy">
         <div class="gov"><span class="gcap">Modern Vibes</span></div>
       </div>
-      <div class="gitem"><img src="optimized-images/ambience-4.webp" alt="Ambience 4" loading="lazy">
+      <div class="gitem"><img width="200" height="200" src="optimized-images/ambience-4.webp" alt="Ambience 4"
+          loading="lazy">
         <div class="gov"><span class="gcap">Warm Lighting</span></div>
       </div>
-      <div class="gitem"><img src="optimized-images/ambience-5.webp" alt="Ambience 5" loading="lazy">
+      <div class="gitem"><img width="1024" height="682" src="optimized-images/ambience-5.webp" alt="Ambience 5"
+          loading="lazy">
         <div class="gov"><span class="gcap">Wall Art</span></div>
       </div>
-      <div class="gitem"><img src="optimized-images/ambience-6.webp" alt="Ambience 6" loading="lazy">
+      <div class="gitem"><img width="1024" height="682" src="optimized-images/ambience-6.webp" alt="Ambience 6"
+          loading="lazy">
         <div class="gov"><span class="gcap">Pizza Solves Everything</span></div>
       </div>
     </div>
@@ -3182,10 +3340,9 @@
           <a href="https://www.zomato.com/mumbai/mix-culture-pizzeria-vile-parle-east/order" target="_blank"
             class="obtn"><span class="obtn-icon">🍅</span><span class="obtn-info"><span class="obtn-pl">Order
                 via</span><span class="obtn-lb">Zomato</span></span><span class="obtn-ar">→</span></a>
-          <a href="https://www.swiggy.com/restaurants/mix-culture-pizzeria-vile-parle-east-mumbai-1152906/dineout"
-            target="_blank" class="obtn"><span class="obtn-icon">🛵</span><span class="obtn-info"><span
-                class="obtn-pl">Order via</span><span class="obtn-lb">Swiggy</span></span><span
-              class="obtn-ar">→</span></a>
+          <a href="https://www.swiggy.com/menu/451813?source=sharing" target="_blank" class="obtn"><span
+              class="obtn-icon">🛵</span><span class="obtn-info"><span class="obtn-pl">Order via</span><span
+                class="obtn-lb">Swiggy</span></span><span class="obtn-ar">→</span></a>
           <a href="https://wa.me/918850717019" target="_blank" class="obtn"><span class="obtn-icon">💬</span><span
               class="obtn-info"><span class="obtn-pl">Order via</span><span class="obtn-lb">WhatsApp</span></span><span
               class="obtn-ar">→</span></a>
@@ -3267,6 +3424,9 @@
     </div>
   </section>
 
+
+
+
   <!-- FOOTER -->
   <footer>
     <div class="wrap">
@@ -3305,8 +3465,7 @@
           <ul class="ftlinks">
             <li><a href="https://www.zomato.com/mumbai/mix-culture-pizzeria-vile-parle-east/order" target="_blank">Order
                 on Zomato</a></li>
-            <li><a href="https://www.swiggy.com/restaurants/mix-culture-pizzeria-vile-parle-east-mumbai-1152906/dineout"
-                target="_blank">Order on Swiggy</a></li>
+            <li><a href="https://www.swiggy.com/menu/451813?source=sharing" target="_blank">Order on Swiggy</a></li>
             <li><a href="https://wa.me/918850717019" target="_blank">WhatsApp Order</a></li>
             <li><a href="tel:+918850717019">Call to Order</a></li>
           </ul>
@@ -3324,13 +3483,7 @@
     </div>
   </footer>
 
-  <!-- STICKY -->
-  <div class="sticky">
-    <a href="https://wa.me/918850717019" target="_blank" class="wafab" title="WhatsApp">💬</a>
-    <a href="#" class="ofab" style="background:var(--green);color:#fff;margin-bottom:8px;"
-      onclick="showResPopup();return false">Reserve Table 🛎️</a>
-    <a href="#" class="ofab" onclick="showPopup();return false">Order Now 🍕</a>
-  </div>
+
 
   <!-- POPUP -->
   <div id="popup" onclick="if(event.target===this)hidePopup()">
@@ -3346,8 +3499,7 @@
             via</span><span style="font-family:'Fraunces',serif;font-size:.95rem;font-weight:700">Zomato</span></span>
         <span style="margin-left:auto;opacity:.4">→</span>
       </a>
-      <a href="https://www.swiggy.com/restaurants/mix-culture-pizzeria-vile-parle-east-mumbai-1152906/dineout"
-        target="_blank" class="pobtn">
+      <a href="https://www.swiggy.com/menu/451813?source=sharing" target="_blank" class="pobtn">
         <span style="font-size:1.5rem">🛵</span>
         <span><span
             style="font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;opacity:.6;display:block;font-family:'DM Mono',monospace">Order
@@ -3376,11 +3528,11 @@
       <p style="font-size:0.75rem; color:var(--gold); margin-bottom:15px; font-weight:bold;">*T&C: You must show this
         reservation confirmation email to the staff to avail the discount.</p>
 
-      <form id="resForm" onsubmit="submitReservation(event)"
-        style="display:flex;flex-direction:column;gap:12px;">
+      <form id="resForm" onsubmit="submitReservation(event)" style="display:flex;flex-direction:column;gap:12px;">
         <input type="text" name="user_name" placeholder="Your Name" required
           style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
-        <input type="tel" name="user_phone" placeholder="Phone Number (e.g. 9876543210)" required pattern="[\+0-9\s\-]{10,15}"
+        <input type="tel" name="user_phone" placeholder="Phone Number (e.g. 9876543210)" required
+          pattern="[\+0-9\s\-]{10,15}"
           style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
         <input type="number" name="guests" placeholder="Number of Guests" required min="1" max="20"
           style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
@@ -3554,7 +3706,7 @@
 
     // Smart Offer 10s Trigger
     setTimeout(() => {
-      if(!sessionStorage.getItem('offer_shown')) {
+      if (!sessionStorage.getItem('offer_shown')) {
         showOfferPopup();
         sessionStorage.setItem('offer_shown', 'true');
       }
@@ -3568,7 +3720,7 @@
 
       if (dateInput && timeSelect) {
         dateInput.setAttribute('min', today);
-        
+
         // Generate time options from 11:00 to 22:30
         for (let i = 11; i <= 22; i++) {
           ['00', '30'].forEach(min => {
@@ -3580,13 +3732,13 @@
             timeSelect.appendChild(opt);
           });
         }
-        
+
         // Handle disabling booked slots
         dateInput.addEventListener('change', () => {
           let selectedDate = dateInput.value;
           let booked = JSON.parse(localStorage.getItem('booked_slots') || '[]');
           let bookedTimes = booked.filter(b => b.date === selectedDate).map(b => b.time);
-          
+
           Array.from(timeSelect.options).forEach(opt => {
             if (opt.value === "") return;
             if (bookedTimes.includes(opt.value)) {
@@ -3610,7 +3762,7 @@
       e.preventDefault();
       const btn = document.getElementById('resSubmitBtn');
       const form = document.getElementById('resForm');
-      
+
       // Capture form fields securely
       const name = form.elements['user_name']?.value || '';
       const phone = form.elements['user_phone']?.value || '';
@@ -3629,7 +3781,7 @@
       // Construct email components with URL encoding
       const emailSubject = encodeURIComponent("New Reservation Booking");
       const emailBody = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nGuests: ${guests}\nDate: ${date}\nTime: ${time}\nMessage: ${message}`);
-      
+
       // Generate mailto link
       const mailtoLink = `mailto:mixculturepizzeria@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
@@ -3656,6 +3808,8 @@
         }, 3500);
       }, 1500);
     }
+
+    console.log("SEO Loaded:", document.title);
   </script>
 
   <style>
@@ -3719,10 +3873,25 @@
     }
 
     .g-btn {
-      display: inline-block; background: var(--red, #c0291c); color: #fff; padding: 14px 24px; text-decoration: none; font-weight: bold; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; width: 100%; box-sizing: border-box; border-radius: 4px; transition: all 0.3s ease;
+      display: inline-block;
+      background: var(--red, #c0291c);
+      color: #fff;
+      padding: 14px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Outfit', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.85rem;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 4px;
+      transition: all 0.3s ease;
     }
+
     .g-btn:hover {
-      transform: scale(1.02); filter: brightness(1.1);
+      transform: scale(1.02);
+      filter: brightness(1.1);
     }
   </style>
 
@@ -3737,7 +3906,8 @@
       <p style="color: var(--muted, #9a9080); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">We'd really
         appreciate it if you could leave us a review on Google!</p>
       <a href="https://www.google.com/search?q=mix+culture+pizzeria#lrd=0x3be7c9f65baaa081:0xa79edee5c604cace,3,,,,"
-        id="google-review-btn" target="_blank" rel="noopener noreferrer" class="g-btn" onclick="trackGoogleClick(); hideGRevPopup();">⭐ Review us on Google</a>
+        id="google-review-btn" target="_blank" rel="noopener noreferrer" class="g-btn"
+        onclick="trackGoogleClick(); hideGRevPopup();">⭐ Review us on Google</a>
     </div>
   </div>
 
@@ -3759,11 +3929,22 @@
     <div class="g-modal-content">
       <button class="g-modal-close" onclick="hideOfferPopup()">×</button>
       <div style="font-size: 3rem; margin-bottom: 10px;">🍕</div>
-      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #faf7f0; margin-bottom: 10px;">
+      <h3
+        style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #faf7f0; margin-bottom: 5px;">
         Special Offer</h3>
-      <p style="color: var(--muted, #9a9080); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Get 10% OFF on your first visit!</p>
+      <div
+        style="display: inline-block; background: var(--red); color: #fff; padding: 3px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.05em; animation: pulse 2s infinite;">
+        ⏰ Limited Time</div>
+      <p style="color: var(--muted, #9a9080); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Get 10% OFF on
+        your first visit!</p>
       <button class="g-btn" onclick="hideOfferPopup()" style="width: 100%;">Claim Offer</button>
     </div>
+  </div>
+  <!-- STICKY CTAs -->
+  <div class="sticky-ctas">
+    <button class="cta-call" onclick="window.location.href='tel:+918850717019'">📞 Call Now</button>
+    <button class="cta-res" onclick="showResPopup()">🍽️ Reserve Table</button>
+    <button class="cta-wa" onclick="window.open('https://wa.me/918850717019', '_blank')">💬 WhatsApp</button>
   </div>
 </body>
 

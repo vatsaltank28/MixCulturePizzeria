@@ -32,7 +32,7 @@ for filename in os.listdir(directory):
         sides.append({'name': name, 'path': path})
 
 def gen_html(items):
-    html = []
+    html: list = []
     for item in items:
         short_name = item['name']
         if "Pizza" in short_name or len(short_name) > 20:
