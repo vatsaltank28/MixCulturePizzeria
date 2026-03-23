@@ -530,6 +530,41 @@
       max-width: 500px
     }
 
+    /* Founder Story Text Styles */
+    .story-wrapper {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+
+    .story-text {
+      color: rgba(255, 255, 255, 0.75);
+      max-width: 650px;
+      line-height: 1.7;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .story-text {
+        font-size: 13.5px;
+      }
+    }
+
+    .story-text.emphasis {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .story-founder {
+      font-size: 12.5px;
+      color: #999;
+      margin-top: 12px;
+      display: block;
+      letter-spacing: 0.2px;
+    }
+
     /* reveal */
     .rv {
       opacity: 0;
@@ -2306,13 +2341,19 @@
           <p class="lbl">Our Story</p>
           <h2 class="hdg">Where Cultures<br>Meet on a <em>Pizza.</em></h2>
           <div class="rule"></div>
-          <img src="food.jpg" alt="Mix Culture Pizza Spread" style="width:100%; border-radius:12px; margin-bottom:24px; box-shadow:0 8px 32px rgba(0,0,0,0.4);" loading="lazy">
-          <p class="subp">Born in 2021 from a deep love for pizza-making and bold flavors — Mix Culture Pizzeria is Vile
-            Parle East's most beloved hidden gem. We blend Italian craft with Indian soul.</p>
-          <br>
-          <p class="subp" style="margin-top:0">Our Chicago Deep Dish is slow-baked until perfect. Our NY-style pies are
-            big, floppy, and gloriously cheesy. Our fusion experiments — paneer tikka, truffle mushroom, Greek feta —
-            redefine what pizza can be.</p>
+
+          <div class="story-wrapper">
+            <p class="story-text">Born from a deep love for crafting experiences, Mix Culture began long before 2021.
+              From stepping into the world of events at 16 to chasing creative dreams across cities, the idea slowly
+              took shape&mdash;driven by passion, risk, and vision.</p>
+            <p class="story-text">In 2021, with just three people and a bold belief, Mix Culture came to life. What
+              started as a dream is now a space where flavors, cultures, and stories come together.</p>
+            <p class="story-text">At our core is the authentic Chicago-style deep-dish pizza&mdash;but our soul goes
+              beyond borders. We blend the richness of Italian tradition with the vibrant, street-style energy of New
+              York, creating something truly our own.</p>
+            <p class="story-text emphasis">This isn&rsquo;t just pizza. It&rsquo;s a culture, built with heart.</p>
+            <span class="story-founder">&mdash; Founder, Mix Culture</span>
+          </div>
           <div class="pills">
             <span class="pill">Chicago Deep Dish</span>
             <span class="pill">NY Style</span>
@@ -2346,8 +2387,7 @@
       </div>
       <div class="dgrid">
         <div class="dc rv" data-tilt>
-          <div class="dc-img"><img src="optimized-images/ultimate-sicilian-pizza.webp" alt="Chicago Deep Dish"
-              loading="lazy">
+          <div class="dc-img"><img src="food.jpg" alt="Chicago Deep Dish Pizza" loading="lazy">
             <div class="dc-shine"></div>
           </div>
           <div class="dc-body">
@@ -2683,6 +2723,11 @@
       <!-- SIDES -->
       <div id="ms" class="mpanel">
         <div class="mpgrid">
+          <div class="mpc"><img src="garlic_knots.jpg" alt="Garlic Knots" loading="lazy">
+            <div class="mpco">
+              <div class="mpco-n">Garlic Knots</div>
+            </div>
+          </div>
           <div class="mpc"><img src="optimized-images/baked-cheese-fries.webp" alt="Baked Cheese Fries" loading="lazy">
             <div class="mpco">
               <div class="mpco-n">Baked Cheese Fries</div>
@@ -2751,6 +2796,13 @@
           </div>
         </div>
         <div class="mrows">
+          <div class="mrow">
+            <div class="mrl">
+              <div class="mrl-n">Garlic Knots</div>
+              <div class="mrl-d">Soft, warm, buttery garlic knots with fresh herbs.</div>
+              <div class="mrl-b"><span class="mb mbg">✨ New</span><span class="mb mbv">🌿 Veg</span></div>
+            </div>
+          </div>
           <div class="mrow">
             <div class="mrl">
               <div class="mrl-n">Jalapeño Cheese Poppers (6 pcs)</div>
@@ -3066,7 +3118,7 @@
           <div class="pb-logo">🍅</div>
           <div><span class="pb-name">Zomato</span><span class="pb-rating">4.4 ★</span></div>
         </a>
-        <a href="https://www.swiggy.com/restaurants/mix-culture-pizzeria-vile-parle-east-mumbai-1152906/dineout"
+        <a href="https://www.swiggy.com/city/mumbai/mix-culture-pizzeria-vile-parle-east-rest451813?source=sharing"
           target="_blank" class="pbadge">
           <div class="pb-logo">🛵</div>
           <div><span class="pb-name">Swiggy Dineout</span><span class="pb-rating">4.6 ★ · 164 reviews</span></div>
@@ -3324,27 +3376,26 @@
       <p style="font-size:0.75rem; color:var(--gold); margin-bottom:15px; font-weight:bold;">*T&C: You must show this
         reservation confirmation email to the staff to avail the discount.</p>
 
-      <form action="https://formsubmit.co/mixculturepizzeria@gmail.com" method="POST"
+      <form id="resForm" onsubmit="submitReservation(event)"
         style="display:flex;flex-direction:column;gap:12px;">
-        <!-- Hidden Config Fields -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Table Reservation from Website!">
-        <input type="hidden" name="_template" value="table">
-
-        <input type="text" name="Name" placeholder="Your Name" required
+        <input type="text" name="user_name" placeholder="Your Name" required
           style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
-        <input type="tel" name="Phone" placeholder="Phone Number" required
+        <input type="tel" name="user_phone" placeholder="Phone Number (e.g. 9876543210)" required pattern="[\+0-9\s\-]{10,15}"
           style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
-        <input type="number" name="Guests" placeholder="Number of Guests" required min="1" max="20"
+        <input type="number" name="guests" placeholder="Number of Guests" required min="1" max="20"
           style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
         <div style="display:flex;gap:12px;">
-          <input type="date" name="Date" required
+          <input type="date" id="resDate" name="date" required
             style="flex:1;padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
-          <input type="time" name="Time" required
-            style="flex:1;padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;">
+          <select id="resTime" name="time" required
+            style="flex:1;padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;appearance:none;">
+            <option value="" disabled selected>Time</option>
+          </select>
         </div>
+        <textarea name="message" placeholder="Optional Message or Special Requests" rows="2"
+          style="padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:inherit;resize:none;"></textarea>
 
-        <button type="submit"
+        <button type="submit" id="resSubmitBtn"
           style="background:var(--gold);color:var(--char);font-weight:bold;padding:14px;border:none;cursor:pointer;margin-top:10px;font-family:inherit;">Confirm
           Reservation</button>
       </form>
@@ -3466,12 +3517,17 @@
             document.querySelector('.rtrack').insertAdjacentHTML('afterbegin', newCard);
           }
 
-          btn.innerText = 'Thanks for your Review!';
+          btn.innerText = 'Thank you for your feedback!';
           setTimeout(() => {
             hideReviewPopup();
             document.getElementById('reviewForm').reset();
             btn.innerText = 'Submit Review';
-          }, 2000);
+            if (rating >= 4.0) {
+              showGRevPopup();
+            } else {
+              showFeedbackPopup();
+            }
+          }, 1500);
         })
         .catch(error => {
           btn.innerText = 'Sorry, try again.';
@@ -3480,8 +3536,235 @@
     }
 
 
+    function showGRevPopup() { document.getElementById('g-rev-modal').classList.add('show'); }
+    function hideGRevPopup() { document.getElementById('g-rev-modal').classList.remove('show'); }
+    function showFeedbackPopup() { document.getElementById('feedback-modal').classList.add('show'); }
+    function hideFeedbackPopup() { document.getElementById('feedback-modal').classList.remove('show'); }
+    function showOfferPopup() { document.getElementById('offer-modal').classList.add('show'); }
+    function hideOfferPopup() { document.getElementById('offer-modal').classList.remove('show'); }
+
+    function trackGoogleClick() {
+      let count = parseInt(localStorage.getItem('google_review_clicks') || '0');
+      count++;
+      localStorage.setItem('google_review_clicks', count);
+      console.log('Google Review Clicks: ' + count);
+    }
+
     setTimeout(showPopup, 7000);
+
+    // Smart Offer 10s Trigger
+    setTimeout(() => {
+      if(!sessionStorage.getItem('offer_shown')) {
+        showOfferPopup();
+        sessionStorage.setItem('offer_shown', 'true');
+      }
+    }, 10000);
+
+    // Reservation valid date constraint and time slot generation
+    document.addEventListener('DOMContentLoaded', () => {
+      let today = new Date().toISOString().split('T')[0];
+      let dateInput = document.getElementById("resDate");
+      let timeSelect = document.getElementById("resTime");
+
+      if (dateInput && timeSelect) {
+        dateInput.setAttribute('min', today);
+        
+        // Generate time options from 11:00 to 22:30
+        for (let i = 11; i <= 22; i++) {
+          ['00', '30'].forEach(min => {
+            let opt = document.createElement('option');
+            let val = `${i}:${min}`;
+            opt.value = val;
+            opt.text = val;
+            opt.style.background = 'var(--char, #1a1814)';
+            timeSelect.appendChild(opt);
+          });
+        }
+        
+        // Handle disabling booked slots
+        dateInput.addEventListener('change', () => {
+          let selectedDate = dateInput.value;
+          let booked = JSON.parse(localStorage.getItem('booked_slots') || '[]');
+          let bookedTimes = booked.filter(b => b.date === selectedDate).map(b => b.time);
+          
+          Array.from(timeSelect.options).forEach(opt => {
+            if (opt.value === "") return;
+            if (bookedTimes.includes(opt.value)) {
+              opt.disabled = true;
+              opt.style.color = '#555';
+              opt.text = `${opt.value} (Booked)`;
+            } else {
+              opt.disabled = false;
+              opt.style.color = '#fff';
+              opt.text = opt.value;
+            }
+          });
+          if (timeSelect.selectedOptions[0]?.disabled) {
+            timeSelect.value = '';
+          }
+        });
+      }
+    });
+
+    function submitReservation(e) {
+      e.preventDefault();
+      const btn = document.getElementById('resSubmitBtn');
+      const form = document.getElementById('resForm');
+      
+      // Capture form fields securely
+      const name = form.elements['user_name']?.value || '';
+      const phone = form.elements['user_phone']?.value || '';
+      const guests = form.elements['guests']?.value || '';
+      const date = form.elements['date']?.value || '';
+      const time = form.elements['time']?.value || '';
+      const message = form.elements['message']?.value || '';
+
+      // Save to localStorage booked_slots
+      if (date && time) {
+        let booked = JSON.parse(localStorage.getItem('booked_slots') || '[]');
+        booked.push({ date: date, time: time });
+        localStorage.setItem('booked_slots', JSON.stringify(booked));
+      }
+
+      // Construct email components with URL encoding
+      const emailSubject = encodeURIComponent("New Reservation Booking");
+      const emailBody = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nGuests: ${guests}\nDate: ${date}\nTime: ${time}\nMessage: ${message}`);
+      
+      // Generate mailto link
+      const mailtoLink = `mailto:mixculturepizzeria@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+
+      // Update UI to notify user
+      btn.innerText = 'Opening your email to confirm reservation...';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+      btn.style.cursor = 'not-allowed';
+
+      // Automatically open email client
+      window.location.href = mailtoLink;
+
+      // Provide completion instructions and cleanup
+      setTimeout(() => {
+        btn.innerText = 'Please press send to complete your booking.';
+        setTimeout(() => {
+          hideResPopup();
+          form.reset();
+          btn.innerText = 'Confirm Reservation';
+          btn.disabled = false;
+          btn.style.opacity = '1';
+          btn.style.cursor = 'pointer';
+          document.getElementById("resDate")?.dispatchEvent(new Event('change'));
+        }, 3500);
+      }, 1500);
+    }
   </script>
+
+  <style>
+    .g-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(26, 24, 20, 0.85);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .g-modal-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .g-modal-content {
+      background: var(--char, #1a1814);
+      border: 1px solid rgba(245, 237, 216, 0.1);
+      padding: 40px 30px;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.4s ease;
+    }
+
+    .g-modal-overlay.show .g-modal-content {
+      transform: translateY(0);
+    }
+
+    .g-modal-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      color: var(--muted, #9a9080);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .g-modal-close:hover {
+      color: #fff;
+    }
+
+    #revRating option {
+      background: var(--char, #1a1814);
+      color: #fff;
+    }
+
+    .g-btn {
+      display: inline-block; background: var(--red, #c0291c); color: #fff; padding: 14px 24px; text-decoration: none; font-weight: bold; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; width: 100%; box-sizing: border-box; border-radius: 4px; transition: all 0.3s ease;
+    }
+    .g-btn:hover {
+      transform: scale(1.02); filter: brightness(1.1);
+    }
+  </style>
+
+  <!-- Google Review Popup -->
+  <div id="g-rev-modal" class="g-modal-overlay" onclick="if(event.target===this)hideGRevPopup()">
+    <div class="g-modal-content">
+      <button class="g-modal-close" onclick="hideGRevPopup()">×</button>
+      <div style="font-size: 3rem; margin-bottom: 10px;">⭐</div>
+      <h3
+        style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #faf7f0; margin-bottom: 10px;">
+        Loved your experience?</h3>
+      <p style="color: var(--muted, #9a9080); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">We'd really
+        appreciate it if you could leave us a review on Google!</p>
+      <a href="https://www.google.com/search?q=mix+culture+pizzeria#lrd=0x3be7c9f65baaa081:0xa79edee5c604cace,3,,,,"
+        id="google-review-btn" target="_blank" rel="noopener noreferrer" class="g-btn" onclick="trackGoogleClick(); hideGRevPopup();">⭐ Review us on Google</a>
+    </div>
+  </div>
+
+  <!-- Normal Feedback Popup -->
+  <div id="feedback-modal" class="g-modal-overlay" onclick="if(event.target===this)hideFeedbackPopup()">
+    <div class="g-modal-content">
+      <button class="g-modal-close" onclick="hideFeedbackPopup()">×</button>
+      <div style="font-size: 3rem; margin-bottom: 10px;">🙏</div>
+      <h3
+        style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #faf7f0; margin-bottom: 10px;">
+        Thank You</h3>
+      <p style="color: var(--muted, #9a9080); font-size: 0.95rem; line-height: 1.6; margin-bottom: 10px;">We appreciate
+        your feedback and will work on improving.</p>
+    </div>
+  </div>
+
+  <!-- Special Offer Popup -->
+  <div id="offer-modal" class="g-modal-overlay" onclick="if(event.target===this)hideOfferPopup()">
+    <div class="g-modal-content">
+      <button class="g-modal-close" onclick="hideOfferPopup()">×</button>
+      <div style="font-size: 3rem; margin-bottom: 10px;">🍕</div>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #faf7f0; margin-bottom: 10px;">
+        Special Offer</h3>
+      <p style="color: var(--muted, #9a9080); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Get 10% OFF on your first visit!</p>
+      <button class="g-btn" onclick="hideOfferPopup()" style="width: 100%;">Claim Offer</button>
+    </div>
+  </div>
 </body>
 
 </html>
